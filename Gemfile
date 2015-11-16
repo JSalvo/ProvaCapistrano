@@ -40,9 +40,11 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '~> 1.4.1'
 end
-gem 'dotenv-rails'
-gem 'capistrano'
-gem 'capistrano-ext'
-gem 'capistrano-passenger'
+
+gem 'dotenv-rails', '~> 2.0.2'
+gem 'capistrano', '~> 3.4.0'
+gem 'capistrano-ext', '~> 1.2.1'
+gem 'capistrano-passenger', '~> 0.1.1'
+gem 'capistrano-bundler', '~> 1.1.4'

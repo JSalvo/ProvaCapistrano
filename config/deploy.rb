@@ -1,10 +1,14 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
+require 'bundler/capistrano'
+require 'capistrano/passenger'
+
+
 set :application, 'provacapistrano'
-#set :deploy_to, '/var/www/html/provacapistrano'
 set :scm, :git
 set :repo_url, 'https://github.com/JSalvo/ProvaCapistrano.git'
+set :deploy_via, :remote_cache
 
 # git@github.com:JSalvo/ProvaCapistrano.git
 set :rails_env, "staging"
