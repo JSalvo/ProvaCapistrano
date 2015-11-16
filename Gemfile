@@ -43,3 +43,6 @@ group :development, :test do
   gem 'spring'
 end
 gem 'dotenv-rails'
+gem 'capistrano'
+gem 'capistrano-ext'
+gem 'capistrano-passenger'
